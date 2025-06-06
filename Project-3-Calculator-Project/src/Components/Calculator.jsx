@@ -67,7 +67,7 @@ const Calculator = () => {
             }
             setInput((prev) => prev + value);
         }
-    }; 
+    };  
     
     const buttons = [
         "7", "8", "9", "/",
