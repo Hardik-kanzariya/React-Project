@@ -8,4 +8,4 @@ const Input = ({ input, result }) => {
     );
 }
 
-export default Input;
+export default Input; 

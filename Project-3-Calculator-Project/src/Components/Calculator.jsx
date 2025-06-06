@@ -51,7 +51,7 @@ const Calculator = () => {
             }
             else if (input === "Error") {
                 setInput(value);
-                setResult("");
+                setResult(""); 
             }
             else if (input === "0" && !isNaN(value)) {
                 setInput(value); // Replace leading zero with the new number
@@ -67,7 +67,7 @@ const Calculator = () => {
             }
             setInput((prev) => prev + value);
         }
-    };
+    }; 
     
     const buttons = [
         "7", "8", "9", "/",
