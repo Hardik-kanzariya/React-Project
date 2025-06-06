@@ -20,6 +20,51 @@ const Calculator = () => {
             setResult("");
         }
         else {
+            if(result.length > 0 && !isNaN(value)) {
+                setInput(value);
+                setResult("");
+            }
+            else if (result.length > 0 && isNaN(value)) {
+                setInput(result + value);
+                setResult("");
+            }
+            else if (input === "" && isNaN(value)) {
+                return; // Prevent operator at the start
+            }
+            else if (input.endsWith("/") && value === "/") {
+                return; // Prevent multiple consecutive operators
+            }
+            else if (input.endsWith("*") && value === "*") {
+                return; // Prevent multiple consecutive operators
+            }
+            else if (input.endsWith("-") && value === "-") {
+                return; // Prevent multiple consecutive operators
+            }
+            else if (input.endsWith("+") && value === "+") {
+                return; // Prevent multiple consecutive operators
+            }
+            else if (input.endsWith("%") && value === "%") {
+                return; // Prevent multiple consecutive operators
+            }
+            else if (input.endsWith(".") && value === ".") {
+                return; // Prevent multiple decimal points 
+            }
+            else if (input === "Error") {
+                setInput(value);
+                setResult("");
+            }
+            else if (input === "0" && !isNaN(value)) {
+                setInput(value); // Replace leading zero with the new number
+            }
+            else if (input === "0" && isNaN(value)) {
+                return; // Prevent operator after leading zero
+            }
+            else if (value === "%") {
+                const percentage = parseFloat(input) / 100;
+                setInput(percentage.toString());
+                setResult(percentage.toString());
+                return;
+            }
             setInput((prev) => prev + value);
         }
     };
@@ -48,4 +93,4 @@ const Calculator = () => {
 }
 
 
-export default Calculator;
+export default Calculator;  
