@@ -1,0 +1,58 @@
+.ice-cream-menu {
+  background-color: #fff;
+  padding-right: 25px;
+  overflow: hidden;
+}
+
+.category-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background-color: red;
+  color: white;
+  padding: 15px 8px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.ice-cream-img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.name-text {
+  font-size: 19px;
+  color: #333;
+}
+
+.price-text {
+  font-size: 16px;
+}
+
+
+
+
+@media (max-width: 576px) {
+  .ice-cream-img {
+    width: 190px;
+    height: 80px;
+  }
+  .name-text{
+    font-size: 20px;
+  }
+
+  .price-text {
+    font-size: 16px;
+  }
+
+  .category-label {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+}
+

@@ -1,0 +1,96 @@
+.faq-wrapper {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'DM Sans';
+}
+
+/* Central container */
+.faq-container {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+.heading-text {
+  font-size: 34px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.faq-body {
+  color: #555555 !important;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'DM Sans';
+}
+
+.accordion-button {
+  font-size: 1.25rem; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.faq-wrapper .accordion-button {
+  font-size: 1.5rem; /* Try this for a clearly larger header */
+}
+
+
+/* Remove focus outline and box-shadow */
+.accordion-button:focus {
+  z-index: 0;
+  outline: none;
+  box-shadow: none !important;
+}
+
+/* Remove active/expanded state styles */
+.accordion-button:not(.collapsed) {
+  color: inherit !important;             
+  background-color: transparent !important; 
+  box-shadow: none;
+}
+
+/* Remove hover effect */
+.accordion-button:hover {
+  background-color: transparent !important;
+   color: inherit; 
+  box-shadow: none;
+}
+
+
+/* Change the arrow color on hover */
+.accordion-button:hover::after {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(90%) saturate(6167%) hue-rotate(357deg) brightness(102%) contrast(112%);
+  
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .heading-text {
+    font-size: 34px;
+    margin-bottom: 10px !important;
+  }
+}
+  
+@media screen and (max-width: 768px) {
+  .faq-wrapper {
+    padding: 40px 10px;
+  }
+
+  .heading-text {
+    font-size: 34px;
+
+  .faq-body {
+    font-size: 14px;
+  }
+
+  .accordion-button {
+    font-size: 1rem; /* Adjust for smaller screens */
+  }
+}
+  
+}

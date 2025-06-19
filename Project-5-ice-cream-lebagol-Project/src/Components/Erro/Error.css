@@ -1,0 +1,137 @@
+.hero-container {
+  position: relative;
+  max-width: 100% !important;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0px !important;
+}
+
+.hero-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 290px;
+}
+
+
+.hero-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.hero-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+.hero-image-wrapper{
+    width: 100%;
+    height: auto;
+    background-image: url(../../assets/blog_bc.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.hero-title{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.error-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.error-image img {
+  margin-top: 80px;
+}
+
+.sub-title{
+  font-size: 48px;
+  font-family: 'kalina, sans-serif';
+  line-height: 1.2083333333;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.error-message p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: 'DM, sans-serif';
+}
+
+
+@media screen and (max-width: 1200px) {
+   .hero-image-wrapper {
+        height: 245px !important;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .hero-image-wrapper {
+       height: 260px !important;
+   }
+   .error-message p {
+    font-size: 18px;
+}
+    .sub-title {
+      font-size: 55px;
+    }
+}
+@media screen and (max-width: 768px) {
+   .hero-image-wrapper {
+       height: 260px !important;
+   }
+   .sub-title {
+      font-size: 48px;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+}
+@media screen and (max-width: 576px) {
+  .hero-image-wrapper {
+    height: 200px !important;
+  }
+
+
+  .hero-text-overlay {
+    font-size: 1rem;
+  }
+
+  .error-message p {
+    font-size: 18px;
+    max-width: 525px;
+    margin: 0 auto;
+}
+
+  .sub-title {
+      font-size: 48px;
+      max-width: 450px;
+      margin: 0 auto;
+      padding-bottom: 25px;
+    }
+
+    .ice-cream-img {
+        width: 540px;
+    }
+}
