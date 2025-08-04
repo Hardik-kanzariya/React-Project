@@ -1,0 +1,56 @@
+/* SignUp.css */
+
+.signup-wrapper {
+   max-width: 500px;
+  width: 100%;
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 2rem auto;
+}
+
+.signup-box {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #dc3545; /* BookMyShow red */
+}
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.signup-button {
+  background-color: #dc3545; /* BookMyShow red */
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.signup-button:hover {
+  background-color: #c82333;
+}
+
+.signin-link {
+  text-align: center;
+  font-size: 14px;
+}
+
+.bk{
+  background-color: black;
+  padding: 20px;
+}
